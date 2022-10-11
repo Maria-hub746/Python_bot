@@ -80,9 +80,8 @@ def delete(data):
         return 'The phone number not exist'
 
 def finish_work():
-    return 'Good bye!'
-
-
+    print('Good bye')
+    quit()
 
 
 INFORMATION = {
@@ -127,6 +126,7 @@ def main():
 
         elif go.split()[0] in INFORMATION:
             print(INFORMATION[go.split()[0]](go.split()[1:]))
+            
 
         else:
             print(
