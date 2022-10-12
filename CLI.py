@@ -18,21 +18,7 @@ def corrector(handler):
     
 @corrector
 def hello():
-    go = input('How can I help you? : ').lower()
-
-    if go == 'help':
-        print(f"All commands: {information}.")
-        
-
-    elif go in INFORMATION:
-        print(INFORMATION[go]())
-
-    elif go.split()[0] in INFORMATION:
-        print(INFORMATION[go.split()[0]](go.split()[1:]))
-
-    else:
-        print(
-            f"Sorry, i don't know, what is '{go}', please, try again.\nAll commands: {information}")
+    return "Hello! How can I help you?"
 
 @corrector
 def add_new_contact(data):
